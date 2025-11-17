@@ -2,7 +2,7 @@ services:
   - type: web
     name: voltara-n8n
     env: docker
-    repo:repo: https://github.com/bambonova-beep/voltara-n8n
+    repo: https://github.com/bambonova-beep/voltara-n8n
     region: oregon
     plan: free
     dockerfilePath: ./Dockerfile
