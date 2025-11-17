@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: voltara-n8n
+    env: docker
+    repo: https://github.com/bambonova-beep/voltora-n8n
+    region: oregon
+    plan: free
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: N8N_HOST
+        value: value: voltara-n8n.onrender.com
+      - key: N8N_PORT
+        value: "5678"
+      - key: N8N_PROTOCOL
+        value: https
+      - key: N8N_ENCRYPTION_KEY
+        generateValue: true
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+      - key: N8N_BASIC_AUTH_USER
+        value: voltara
+      - key: N8N_BASIC_AUTH_PASSWORD
+        generateValue: true
+
