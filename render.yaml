@@ -8,7 +8,7 @@ services:
     dockerfilePath: ./Dockerfile
     envVars:
       - key: N8N_HOST
-        value: value: voltara-n8n.onrender.com
+        value: voltara-n8n.onrender.com
       - key: N8N_PORT
         value: "5678"
       - key: N8N_PROTOCOL
@@ -21,4 +21,3 @@ services:
         value: voltara
       - key: N8N_BASIC_AUTH_PASSWORD
         generateValue: true
-
